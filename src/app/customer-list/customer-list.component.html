@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="table-responsive">
+      <table class="table">
+          <thead>
+              <tr>
+                <th scope="col">#ID</th>
+                <th scope="col">image</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customers; let i = index">
+                    <th scope="row">{{ customer.ID }}</th>
+                    <th><img src="../../assets/img/placeholder.png" class="img-fluid"></th>
+                    <td>{{ customer.value.FirstName }}</td>
+                    <td>{{ customer.value.lastName }}</td>
+                    <td>{{ customer.value.address }}</td>
+                    <td>{{ customer.value.state }}</td>
+                    <td>{{ customer.value.city }}</td>
+                  </tr>
+            </tbody>
+      </table>
+    </div>
+    <!-- <div class="col-md-12" *ngFor="let customer of customers; let i = index">
+      <div class="block">
+          <p class="header-block">{{ customer.value.name }}</p>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="../../assets/img/placeholder.png" class="img-fluid">
+            </div>
+            <div class="col-md-9">
+                <div class="body-block">{{ customer.value.name }}</div>
+            </div>
+          </div>
+      </div>
+    </div> -->
+  </div>
+</div>

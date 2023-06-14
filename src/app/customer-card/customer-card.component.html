@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let customer of customers; let i = index">
+        <div class="block">
+            <p class="header-block">{{ customer.value.FirstName }}</p>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="../../assets/img/placeholder.png" class="img-fluid">
+                </div>
+                <div class="col-md-9">
+                    <div class="body-block">{{ customer.value.FirstName }} {{ customer.value.lastName }}</div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+

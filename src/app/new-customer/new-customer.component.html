@@ -1,0 +1,39 @@
+<div class="add-new">
+    <div class="container">
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-12 mb-3 p-0">
+                <div class="col-3 upload">
+                    <img class="img-fluid img-thumbnail" [src]="imgURL ? imgURL : '../../assets/img/upload.png'">
+                    <input #file type="file" class="customer-img" accept='image/*' (change)="preview(file.files)">
+                </div>
+              </div>
+                <div class="col-md-6">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" #fname>
+                </div>
+                <div class="col-md-6">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" #lname>
+                </div>
+                <div class="col-md-6">
+                    <label>Address</label>
+                    <input type="text" class="form-control" #address>
+                </div>
+                <div class="col-md-6">
+                    <label>City</label>
+                    <input type="text" class="form-control" #city>
+                </div>
+                <div class="col-md-6">
+                    <label>State</label>
+                    <input type="text" class="form-control" #state>
+                </div>
+                <div class="col-12 mt-3">
+                    <input type="submit" (click)="saveCustomer(fname.value, lname.value, address.value, city.value, state.value)" class="btn btn-info" value="Save">
+                </div>
+            </div>
+          </div>
+        </form>
+      </div>
+</div>

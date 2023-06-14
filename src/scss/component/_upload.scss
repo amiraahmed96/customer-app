@@ -1,0 +1,15 @@
+.upload {
+  position: relative;
+  img {
+    height: 200px;
+  }
+  .customer-img {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 100%;
+    opacity: 0;
+    z-index: 99;
+    cursor: pointer;
+  }
+}
